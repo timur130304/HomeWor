@@ -1,91 +1,42 @@
-﻿// Задачча 34
+﻿// Задача 41
 
-// int [] CreateRandArray(int size)
-// {
-//     Random rnd = new Random();
-//     int [] arr  = new int [size];
-//     for (int i = 0;i < size;i++){
-//         arr[i] = rnd.Next(100,999);
-//     }
-//     return arr;
-// }
 // Console.WriteLine("Enter the size of the array: ");
 // int size = Convert.ToInt32(Console.ReadLine());
-
-// static void PrintArray(int [] arr){
+// int [] arr  = new int [size];
+// void CreateArray()
+// {
 //     for (int i = 0;i < arr.Length;i++){
-//         Console.WriteLine(arr[i]);
+//         Console.WriteLine($"Enter {i} array value:");
+//         arr[i] = Convert.ToInt32(Console.ReadLine());
 //     }
 // }
-
-// void HonestNumber(int [] arr){
-//     int count = 0;
-//     for (int i = 0;i < arr.Length;i++){
-//         if (arr[i] % 2 == 0){
-//             count += 1;
+// int i = 0, count = 0;
+// void NumberOfNumbers(int []arr){
+//     if (arr[i] > 0){
+//         count++;
+//         if(i < size - 1){
+//             i++;
+//             NumberOfNumbers(arr);
 //         }
 //     }
-//     Console.WriteLine($"The number of even numbers in the array is {count}");
     
 // }
-// PrintArray(CreateRandArray(size));
-// HonestNumber(CreateRandArray(size));
+// CreateArray();
+// NumberOfNumbers(arr);
+// Console.WriteLine($"The number of numbers greater than zero is {count}");
 
-// Задача 36
+// Задача 43
 
-// int [] CreateRandArray(int size)
-// {
-//     Random rnd = new Random();
-//     int [] arr  = new int [size];
-//     for (int i = 0;i < size;i++){
-//         arr[i] = rnd.Next(1,999);
-//         Console.WriteLine(arr[i]);
-//     }
-//     return arr;
-// }
+// Console.WriteLine("введите значение b1");
+// double b1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("введите число k1");
+// double k1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("введите значение b2");
+// double b2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("введите число k2");
+// double k2 = Convert.ToInt32(Console.ReadLine());
 
+// double x = (-b2 + b1)/(-k1 + k2);
+// double y = k2 * x + b2;
 
-// void Sum(int [] arr){
-//     int sum = 0;
-//     for(int i = 0; i < arr.Length; i++){
-//         if (i % 2 != 0){
-//             sum += arr[i];
-//         }
-//     }
-//     Console.WriteLine($"The sum of the numbers in odd positions is equal to {sum}");
-// }
-// Console.WriteLine("Enter the size of the array: ");
-// int size = Convert.ToInt32(Console.ReadLine());
-// Sum(CreateRandArray(size));
-
-// Задача 38
-
-// double [] CreateRandArray(int size)
-// {
-//     Random rnd = new Random();
-//     double [] arr  = new double [size];
-//     for (int i = 0;i < size;i++){
-//         arr[i] = rnd.NextDouble();
-//         Console.WriteLine(arr[i]);
-//     }
-//     return arr;
-// }
-
-// void MaxElandMinEl(double [] arr ){
-//     double max = arr[0];
-//     double min = arr[0];
-//     for(int i = 1;i < arr.Length;i++){
-//         if (arr[i] > max){
-//             max = arr[i];
-//         }
-//     }
-//     for(int i = 1;i < arr.Length;i++){
-//         if (arr[i] < min){
-//             min = arr[i];
-//         }
-//     }
-//     Console.WriteLine($"The difference between  the max and min is equal to {max - min}");
-// }
-// Console.WriteLine("Enter the size of the array: ");
-// int size = Convert.ToInt32(Console.ReadLine());
-// MaxElandMinEl(CreateRandArray(size));
+// Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
